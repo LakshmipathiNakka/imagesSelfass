@@ -1,6 +1,6 @@
 import {Component} from 'react'
 
-import CityItem from '../CityItem'
+import ImageItem from '../ImageItem'
 import TabItem from '../TabItem'
 
 import './index.css'
@@ -491,6 +491,7 @@ class AppStore extends Component {
   }
 
   totalPages = () => {
+    // eslint-disable-next-line no-unused-vars
     const {citiesPerPage} = this.state
     return 2
   }
@@ -499,6 +500,7 @@ class AppStore extends Component {
     const {searchInput, activeTabId, currentPage, citiesPerPage} = this.state
     const searchResults = this.getSearchResults()
     const activeTabCities = this.getActiveTabCities(searchResults)
+    // eslint-disable-next-line no-unused-vars
     const displayCities = activeTabCities.slice(
       currentPage * citiesPerPage,
       currentPage * citiesPerPage + citiesPerPage,
