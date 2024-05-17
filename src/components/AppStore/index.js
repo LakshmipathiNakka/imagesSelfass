@@ -556,7 +556,7 @@ class AppStore extends Component {
             <div className="row">
               <ul className="cities-list">
                 {activeTabCities.map(eachCity => (
-                  <CityItem key={eachCity.cityId} cityDetails={eachCity} />
+                  <ImageItem key={eachCity.cityId} cityDetails={eachCity} />
                 ))}
               </ul>
             </div>

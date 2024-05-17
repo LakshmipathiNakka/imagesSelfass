@@ -2,7 +2,7 @@
 import './index.css' // Importing styles from './index.css'
 
 // CityItem functional component definition
-const CityItem = props => {
+const ImageItem = props => {
   // Destructuring props to extract cityDetails
   const {cityDetails} = props
   const {cityName, imageUrl} = cityDetails
@@ -28,4 +28,4 @@ const CityItem = props => {
   )
 }
 
-export default CityItem // Exporting CityItem component as the default export
+export default ImageItem // Exporting CityItem component as the default export
